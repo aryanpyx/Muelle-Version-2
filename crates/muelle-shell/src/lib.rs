@@ -12,6 +12,7 @@ pub mod keyboard;
 pub mod launcher;
 pub mod log;
 pub mod names;
+pub mod notchpyx;
 pub mod pins;
 pub mod power;
 pub mod recycle_bin;

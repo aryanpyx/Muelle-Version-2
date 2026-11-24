@@ -1,158 +1,217 @@
 <div align="center">
-  
-<img width="50%" alt="Frame 1116606779" src="https://github.com/user-attachments/assets/8c715a53-a0df-4780-9dd4-09ce3ccd9043" />
 
-  **A lightweight, macOS-inspired dock for Windows 10 and 11.**
+# 🌊 Muelle Version 2
 
-  Muelle replaces the Windows taskbar with a customizable dock and an optional
-  macOS-style menu bar.
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=38BDF8&center=true&vCenter=true&width=700&lines=macOS+Dock+%2B+Dynamic+Island+for+Windows+11;Silky+Smooth+60FPS+Magnification+%26+Genie+Effect;Integrated+Notchpyx+HUD+%26+Unified+Launcher;Zero+Bloat%2C+Blazing+Fast+Native+Rust+%2B+Win32" alt="Typing SVG" />
+</p>
+
+<p align="center">
+  <b>The ultimate macOS-inspired desktop environment for Windows 11.</b><br/>
+  Featuring a fluid cursor-magnified dock, integrated <b>Notchpyx Dynamic Island</b>, top menu bar, and seamless window management.
+</p>
+
+<p align="center">
+  <a href="#-features"><img src="https://img.shields.io/badge/Platform-Windows%2011%20%7C%2010-0078D6?style=for-the-badge&logo=windows11&logoColor=white" alt="Platform" /></a>
+  <a href="#-tech-stack"><img src="https://img.shields.io/badge/Core-Rust%20%E2%9A%80-DEA584?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" /></a>
+  <a href="#-dynamic-island"><img src="https://img.shields.io/badge/HUD-Notchpyx%20Dynamic%20Island-000000?style=for-the-badge&logo=apple&logoColor=white" alt="Dynamic Island" /></a>
+  <a href="#-performance"><img src="https://img.shields.io/badge/Performance-60%20FPS%20Fluid-4ADE80?style=for-the-badge&logo=speedtest&logoColor=black" alt="60 FPS" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License" /></a>
+</p>
+
+---
+
+### 🖥️ Full Desktop Experience Showcase
+
+<br/>
+
+<div align="center">
+  <img src="assets/screenshots/muelle-v2-desktop.jpg" alt="Muelle Version 2 Desktop Setup" width="96%" style="border-radius: 12px; box-shadow: 0 16px 40px rgba(0,0,0,0.6);" />
+  <p><i>Muelle V2 in action: macOS Menu Bar + Notchpyx Dynamic Island at top, clean fluid Dock at bottom with live icons & custom apps.</i></p>
+</div>
+
+---
 
 </div>
 
-<img width="1500" height="436" alt="Frame 1116606780" src="https://github.com/user-attachments/assets/3c91b488-214d-453d-a8c2-a9e0dc7f245e" />
+## 🌟 What's New in Version 2?
 
-<img width="1000" height="259" alt="ezgif-6345057d171e16ef" src="https://github.com/user-attachments/assets/e5b2ce63-cec1-4d1d-8ef1-a4fa1c668c40" />
+Muelle Version 2 bridges the gap between elegance and raw Windows productivity by seamlessly blending **Muelle's native glass dock** with **Notchpyx's Dynamic Island** and introducing a synchronized window-hierarchy launcher.
 
+| Feature | Muelle V1 | Muelle V2 |
+| :--- | :---: | :---: |
+| **macOS Glass Dock** | ✅ | ✅ **Enhanced (Decluttered & Streamlined)** |
+| **Dynamic Island HUD** | ❌ (Static text) | 🌟 **Integrated Notchpyx Dynamic Island** |
+| **Top Menu Bar** | ✅ | ✅ **Unified with Island Z-Order Engine** |
+| **Single-Click Unified Launcher** | ❌ | 🌟 **`MuelleLauncher.exe` (Persistent Window Pos)** |
+| **Decluttered Dock Layout** | ❌ (Forced bin/downloads) | 🌟 **Clean pinned apps with zero clutter** |
+| **Genie Minimize & Live Previews** | ✅ | ✅ **Refined 60 FPS transitions** |
 
-Smooth magnification, live window previews, and an optional Genie-style minimize effect.
+---
 
-| Clawd Pet | Genie Effect on Minimize |
+## 🎬 Visual Tour & Highlights
+
+<div align="center">
+
+| 🪄 Genie Effect Minimize | 🔍 Fluid Magnification & Hover |
 | :---: | :---: |
-| ![GIF showing mascot the Dock and Menu Bar](https://github.com/user-attachments/assets/580b235e-6141-493a-a333-8f2b96f3acca) | ![GIF showing a window minimizing into the Dock with the Genie effect](https://github.com/user-attachments/assets/878503a8-7286-445d-826b-41c18da013bc) |
-| **Usage preview** | **Usage detail** |
-| ![GIF showing the Dock and Menu Bar automatically hiding and reappearing](https://github.com/user-attachments/assets/60a8f7c0-20fc-429b-977f-d5b4b7d97d88) | ![GIF showing a window minimizing into the Dock with the Genie effect](https://github.com/user-attachments/assets/fbf21cf6-c1c0-4173-9d68-ae883f0d2a45) |
+| <img src="https://github.com/user-attachments/assets/878503a8-7286-445d-826b-41c18da013bc" width="420" alt="Genie Effect" /> | <img src="https://github.com/user-attachments/assets/580b235e-6141-493a-a333-8f2b96f3acca" width="420" alt="Dock Hover Magnification" /> |
+| *Accurate macOS-style window minimization into dock* | *Sub-pixel smooth cursor magnification with zero lag* |
 
-## Features
+| 🧭 Auto-Hide & Top Bar Integration | ⚡ Ultra-Low Memory Idle (~15 MB) |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/60a8f7c0-20fc-429b-977f-d5b4b7d97d88" width="420" alt="Auto-hide preview" /> | <img src="assets/screenshots/dock-idle-memory.png" width="420" alt="Idle Memory footprint" /> |
+| *Intelligent auto-hide on fullscreen apps & games* | *Native Rust implementation — no Electron overhead* |
 
-- Glass-style dock with smooth, cursor-based icon magnification.
-- Launch, pin, reorder, and manage apps, including recent apps and open windows.
-- Group pinned apps into a single dock icon: drop one app onto another, click
-  the group to fan its apps out, and drag one out of the fan to take it back.
-- Hover over an app with multiple windows to show live, titled previews;
-  click a preview to switch to that window. Scroll over the previews for more
-  windows, or press Escape to dismiss it.
-- Minimized windows fold into their app's icon with the Genie effect; turn on
-  Settings → Windows → *Show minimized windows* to keep them as live thumbnails
-  on the right side of the dock instead.
-- Click the app already in front to minimize it, as on the Windows taskbar.
-- Drag and drop files onto apps, Downloads, or the Recycle Bin.
-- A shortcuts folder at the right of the dock: its contents open as a menu,
-  with a submenu for each folder inside, like a Windows 10 taskbar toolbar.
-- Optional auto-hide.
-- A top menu bar with the app in front, clock, network, volume and battery, the
-  input language, microphone/camera in use, the hidden tray icons, plus
-  the Search, Task View and Widgets buttons if you have them on the Windows taskbar.
-- A curved island in the menu bar for usage limits from Claude Code, Codex,
-  OpenCode Go, Gemini CLI, and Antigravity. Gemini Pro
-  and Flash quotas appear separately when available.
-- Separate Settings app with live changes, Spanish, English and French, and a
-  configurable Genie-style minimize animation.
-- A watchdog restores the Windows taskbar if the dock exits unexpectedly.
+</div>
 
-The Genie effect is **on by default** and can be turned off in Settings → Windows.
-While enabled, Muelle temporarily disables Windows window transitions for
-tracked windows so its minimize animation can run; those transitions are
-restored when Muelle exits.
+---
 
-## Install
+## 🚀 Key Features
 
-**[Download Muelle-Setup.exe](https://github.com/crafter-station/Muelle/releases/latest/download/Muelle-Setup.exe)**
-(Windows 10 version 1903 or later, or Windows 11; 64-bit) or pick a version from
-[Releases](https://github.com/crafter-station/Muelle/releases).
+### 🏝️ 1. Notchpyx Dynamic Island Integration
+- **Persistent Topmost HUD**: Top-center Dynamic Island stays beautifully in front of the macOS menu bar.
+- **Interactive Widgets**: Clock, media playback controls, battery charging animations, network telemetry, and quick status alerts.
+- **Smart Expansion**: Touch or click to expand into full control panels, auto-collapsing when idle.
 
-1. Run `Muelle-Setup.exe`. It installs for your user only: no administrator
-   rights, no wizard, about two seconds.
-2. Muelle is new, so Windows SmartScreen may not recognize it yet and say it
-   protected your PC. Choose **More info → Run anyway**. See the
-   [code-signing policy](https://muelle.crafter.run/code-signing-policy).
-3. Open **Muelle** from the Start menu, then choose **Dock** to
-   personalize the dock and top menu bar.
+### 🌊 2. macOS Glass Dock
+- **Parabolic Magnification**: Smooth cursor-tracking magnification powered by Direct2D / DirectComposition.
+- **Decluttered & Customizable**: Run with only the apps you love (VS Code, Chrome, Terminal, Spotify, WhatsApp) without forced system folders.
+- **App Grouping & Fanning**: Drop apps onto one another to create folders; click to fan them out in macOS Launchpad style.
+- **Live Window Thumbnails**: Hover over any multi-window app to view real-time live window previews with one-click switching.
 
-## Try it on Windows
+### 🪄 3. True Genie Minimize Effect
+- Uses native Win32 window hooking and custom vertex mesh transformations to fold windows down into their dock icons.
+- Auto-restores standard Windows window transitions upon exit.
 
-### Prerequisites
+### 👑 4. Unified MuelleLauncher Engine
+- **Single-click start**: Starts both Muelle Dock and Notchpyx DynamicBar concurrently.
+- **Real-Time Z-Order Monitor**: Automatically resolves z-index conflicts between `MuelleMenuBar` and `DynamicBarIslandStage` using Win32 `SetWindowPos`, guaranteeing the island remains cleanly on top without flicker.
+- **Graceful Shutdown**: Automatically restores the standard Windows taskbar if closed or on system sleep.
 
-- Windows 10 (version 1903 or later) or Windows 11. On Windows 10 the dock and
-  menu bar are solid instead of glass: Windows 10 has no backdrop blur for
-  desktop apps.
-- Rust with the MSVC toolchain and Visual Studio C++ Build Tools
-- Node.js and pnpm
+---
 
-### Run the dock
+## 🏗️ System Architecture
 
-From the repository root:
+```mermaid
+graph TD
+    Launcher["🚀 MuelleLauncher.exe\n(C# Win32 Background Supervisor)"]
+    
+    subgraph Core Components
+        Dock["🌊 Muelle Dock\n(Rust + Win32/Direct2D)"]
+        Menu["🪟 Muelle Menu Bar\n(Active App + Tray + Quotas)"]
+        Notch["🏝️ Notchpyx DynamicBar\n(Interactive Dynamic Island HUD)"]
+    end
+    
+    subgraph Windows 11 DWM Layer
+        ZOrder["⚡ Dynamic Z-Order Manager\n(HWND_TOPMOST & HWNDPREV sync)"]
+        DWM["🖥️ Desktop Window Manager (Glass/Mica)"]
+    end
 
-```powershell
-cargo run -p muelle
+    Launcher -->|Spawns & Monitors| Dock
+    Launcher -->|Spawns & Monitors| Notch
+    Dock --> Menu
+    Launcher -->|Z-Order Sync (150ms)| ZOrder
+    ZOrder -->|Notch atop Menu| DWM
 ```
 
-The dock hides the taskbar while it is running. Press **Ctrl+C** in the
-terminal to exit; Muelle should restore the taskbar automatically. If you need
-to restore it manually:
+---
 
+## 📥 Quick Start & Installation
+
+### Option A: Pre-built Binary Setup
+
+1. **Clone the Repository**:
+   ```powershell
+   git clone https://github.com/aryanpyx/Muelle-Version-2.git
+   cd Muelle-Version-2
+   ```
+
+2. **Run via Unified Launcher**:
+   - Launch `MuelleLauncher.exe` (or build from source using `launcher\build.bat`).
+   - Muelle will hide the default Windows taskbar and bring up your new glass dock and Dynamic Island.
+
+3. **Restore Windows Taskbar**:
+   - Simply quit Muelle from the tray or press `Ctrl + Shift + Esc` to access Task Manager and terminate `muelle.exe`.
+   - Or run:
+     ```powershell
+     .\muelle.exe --restore
+     ```
+
+---
+
+### Option B: Building from Source
+
+#### Prerequisites
+- Windows 10 (1903+) or Windows 11
+- [Rust toolchain](https://rustup.rs/) (MSVC)
+- Node.js & pnpm (for web/settings components)
+- .NET Framework 4.0+ (for `MuelleLauncher`)
+
+#### 1. Build Muelle Dock (Rust)
 ```powershell
-cargo run -p muelle -- --restore
+cargo build --release -p muelle
 ```
 
-### Run Settings
-
-Keep the dock running, open a second terminal, and run:
-
+#### 2. Compile Unified Launcher
 ```powershell
-cd apps\settings
-pnpm install
-pnpm tauri dev
+cd launcher
+.\build.bat
 ```
 
-This opens the native Settings window. Frontend changes hot-reload; after
-changing the Rust backend, restart `tauri dev`. Settings changes are applied to
-the running dock.
+#### 3. Integrate Notchpyx
+Place `DynamicBar.exe` and its supporting assets into a `notchpyx/` folder inside your build output directory, then execute `MuelleLauncher.exe`.
 
-## Build and test
+---
 
-From the repository root:
+## ⚙️ Configuration & Customization
 
-```powershell
-cargo fmt --all -- --check
-cargo test --workspace --locked
+Muelle V2 stores its user configuration in `%APPDATA%\Muelle\config.json`.
+
+```json
+{
+  "theme": "dark",
+  "autohide": false,
+  "magnification": true,
+  "iconSize": 56,
+  "magnifiedSize": 90,
+  "showMinimized": false,
+  "showRecents": false,
+  "notchpyx": true,
+  "menuBar": true
+}
 ```
 
-To build the Settings frontend:
+---
 
-```powershell
-cd apps\settings
-pnpm build
-```
+## ⌨️ Shortcuts & Controls
 
-## Project layout
+| Shortcut / Action | Function |
+| :--- | :--- |
+| `Win` (with taskbar hidden) | Opens Windows Start Menu seamlessly |
+| `Click Active Dock Icon` | Minimizes / Restores window |
+| `Hover Dock Icon` | Reveals live window thumbnail preview |
+| `Click Dynamic Island` | Expands Dynamic Island into interactive controls |
+| `Drag & Drop on Dock` | Pins app or opens file in target app |
+| `Ctrl + C` (in CLI) | Clean shutdown & restores native Windows taskbar |
 
-| Path | Purpose |
-|---|---|
-| `apps/dock` | Native Windows dock |
-| `apps/settings` | Tauri desktop settings app |
-| `crates/muelle-core` | Platform-independent layout and animation logic |
-| `crates/muelle-shell` | Windows shell integration |
-| `crates/muelle-config` | Shared settings and persistence |
-| `muelle` | Astro website |
+---
 
-## Privacy
+## 🧑‍💻 Credits & Acknowledgments
 
-Muelle collects no data, has no telemetry and never sends anything to the
-project. It makes two kinds of network requests, both optional:
+- **Aryan Pandey ([@aryanpyx](https://github.com/aryanpyx))**
+  - Muelle Version 2 Architecture & Integration
+  - Notchpyx Dynamic Island system
+  - MuelleLauncher Z-Order Engine & Window Synchronization
+  - Dock decluttering & custom icon styling
+- **[crafter-station / Muelle](https://github.com/crafter-station/Muelle)**
+  - Original Muelle dock core, Direct2D glass rendering, and Genie effect animations
 
-- **Updates:** Settings asks GitHub Releases for a newer version when it
-  opens, and once a day, a couple of minutes after you turn on the computer,
-  Muelle does the same in the background and installs what it finds (the dock
-  itself never uses the network). Turn off the installing in Settings → System
-  → *Install updates automatically*, or everything with *Check for updates
-  automatically*.
-- **AI provider usage:** while a supported client is running, Muelle reads its
-  existing local sign-in and asks that provider for available plan limits
-  every five minutes while visible, or when you press Refresh. For Gemini CLI
-  and Antigravity, Gemini Pro and Flash quotas are shown separately when
-  available; Antigravity is queried through its local service. Credentials stay
-  in memory and are never stored by Muelle. Turn it off in Settings → Menu bar
-  → *Show AI provider usage*.
-- **Notifications:** notification content and banners are processed strictly in memory on your local machine and are never written to disk, saved in log files, or transmitted over the network.
+---
 
-Details: [muelle.crafter.run/privacy](https://muelle.crafter.run/privacy).
+<div align="center">
+
+<b>Crafted with ❤️ by <a href="https://github.com/aryanpyx">Aryan Pandey</a></b><br/>
+<sub>Give this repo a ⭐ if you love having a modern macOS aesthetic on Windows 11!</sub>
+
+</div>

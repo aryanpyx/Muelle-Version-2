@@ -126,6 +126,10 @@ pub struct Config {
     pub notification_dnd: bool,
     /// List of app identifiers whose notifications are muted.
     pub muted_apps: Vec<String>,
+    /// Integrate Notchpyx (Dynamic Island) into the top menu bar.
+    pub notchpyx: bool,
+    /// Path to Notchpyx executable. If None, looks in standard locations.
+    pub notchpyx_path: Option<String>,
 }
 
 #[derive(Clone, Copy, Debug, Default, PartialEq, Eq, Serialize, Deserialize)]
@@ -283,6 +287,8 @@ impl Default for Config {
             notification_bounce: true,
             notification_dnd: false,
             muted_apps: Vec::new(),
+            notchpyx: true,
+            notchpyx_path: None,
         }
     }
 }

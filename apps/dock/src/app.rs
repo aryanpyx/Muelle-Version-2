@@ -5796,6 +5796,12 @@ pub fn run() -> Result<()> {
     with_app("ocultar la barra de Windows", |app| {
         app.request_taskbar(false)
     });
+    with_app("iniciar Notchpyx", |app| {
+        if app.config.notchpyx {
+            muelle_shell::notchpyx::ensure_running(app.config.notchpyx_path.as_deref());
+        }
+        Ok(())
+    });
 
     muelle_shell::log::line(&format!(
         "interfaz inicializada en {} ms desde app::run; comienza el bucle de mensajes",
@@ -5816,6 +5822,7 @@ pub fn run() -> Result<()> {
         })
     });
     APP.set(None);
+    muelle_shell::notchpyx::stop();
     // SAFETY: Balances `OleInitialize` above, on the same thread.
     unsafe { OleUninitialize() };
     // Wait for taskbar takeover to finish before restoring it.
